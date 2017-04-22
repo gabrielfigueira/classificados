@@ -35,8 +35,19 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-
+# Autenticação e internacionalização
 gem 'devise'
+gem 'devise-i18n'
+
+#Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
+# Internacionalização
+gem 'rails-i18n'
+
+# Assisten de inicialização com procfile
+gem 'foreman'
+
+# Gerar DER
+gem "rails-erd"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,6 +62,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "better_errors"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+p "Cadastrando as CATEGORIAS..."
+categorias = ["Animais e acessórios",
+              "Esportes",
+              "Para a sua casa",
+              "Eletronicos e celulares",
+              "Música e hobbies",
+              "Bebês e crianças",
+              "Moda e beleza",
+              "Veículos e barcos",
+              "Imóveis",
+              "Empregos e negócios"]
+categorias.each do |categoria|
+  Category.find_or_create_by(description: categoria)
+end
+p "Categorias cadastradas"
