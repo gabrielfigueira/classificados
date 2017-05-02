@@ -49,6 +49,10 @@ gem 'foreman'
 # Gerar DER
 gem "rails-erd"
 
+# Rails gem of the Bootstrap based admin theme SB Admin 2. http://dreamingechoes.github.io/boots…
+gem 'bootstrap_sb_admin_base_v2'
+
+gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
